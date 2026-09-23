@@ -1,8 +1,8 @@
-# 🧑‍💻 Portfolio — Développeur Web Junior
+# Portfolio - Développeur Web Junior
 
 Portfolio personnel développé en HTML, Tailwind CSS et JavaScript vanilla.
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 portfolio/
@@ -22,12 +22,12 @@ portfolio/
 └── README.md
 ```
 
-## 🚀 Lancer le projet
+## Lancer le projet
 
 Ouvre simplement `index.html` dans ton navigateur.
 Aucune installation requise.
 
-## ✏️ Personnalisation
+## Personnalisation
 
 1. Remplace `Votre Prénom` par ton prénom dans `index.html`
 2. Mets ton email, GitHub et LinkedIn
@@ -36,13 +36,13 @@ Aucune installation requise.
 5. Dépose ton CV dans `assets/cv.pdf`
 6. Mets à jour l'email dans `assets/js/main.js` (ligne du mailto)
 
-## 🌐 Déploiement
+## Déploiement
 
 - **GitHub Pages** : push le dossier sur GitHub → Settings → Pages
 - **Netlify** : drag & drop du dossier sur netlify.com
 - **Vercel** : importe le repo GitHub sur vercel.com
 
-## 🛠️ Stack
+## Stack
 
 - HTML5
 - Tailwind CSS (CDN)
