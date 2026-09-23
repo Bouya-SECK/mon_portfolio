@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets — Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-dark.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-accent">BouyaSECK</span>.portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list" style="color:#ff6b00;font-size:1.5rem"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2 align-items-center">
+                    <li class="nav-item"><a class="nav-link nav-custom" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom" href="index.html#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom" href="index.html#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom active" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-orange-outline btn-sm px-3" href="contact.html">Me
+                            contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <p class="section-tag">Portfolio</p>
+            <h1 class="section-title" style="font-size:2.8rem">Mes Projets</h1>
+            <p class="text-muted-custom">Cliquez sur une image pour voir les captures d'écran étape par
+                étape.<br />Cliquez sur <strong class="text-orange">Live demo</strong> pour voir la vidéo de
+                démonstration.</p>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- ── PROJET 1 ── -->
+                <div class="col-12">
+                    <div class="project-full-card reveal">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-5">
+                                <!-- Image cliquable → galerie -->
+                                <div class="project-gallery-thumb" onclick="openGallery(0)">
+                                    <img src="assets/images/projects/projet1/isiburger.png" alt="Projet 1"
+                                        class="project-full-img" />
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-images"></i>
+                                        <span>Voir les captures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="project-full-body">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="project-badge">Laravel</span>
+                                        <span class="project-num">#01</span>
+                                    </div>
+                                    <h3 class="project-title">NOMABurger</h3>
+                                    <p class="project-desc">Le restaurant NOMA Burger avait besoin d'une solution
+                                        numérique pour automatiser la gestion de ses commandes, remplacer les
+                                        processus manuels et améliorer l'expérience de ses clients.
+                                        J'ai conçu et développé l'intégralité de l'application,
+                                        de la base de données à l'interface utilisateur.
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <span class="tech-tag">Laravel</span>
+                                        <span class="tech-tag">Tailwind CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">JPA/Hibernate</span>
+                                        <span class="tech-tag">PHP</span>
+                                    </div>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <a href="https://github.com/Bouya-SECK/vente-burger" target="_blank"
+                                            class="btn btn-outline-custom btn-sm">
+                                            <i class="bi bi-github me-2"></i>GitHub
+                                        </a>
+                                        <!-- Bouton Live demo → modal vidéo -->
+                                        <button class="btn btn-orange btn-sm" onclick="openVideo('#')">
+                                            <i class="bi bi-play-circle me-2"></i>Live demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJET 2 ── -->
+                <div class="col-12">
+                    <div class="project-full-card reveal">
+                        <div class="row g-0 align-items-center flex-lg-row-reverse">
+                            <div class="col-lg-5">
+                                <div class="project-gallery-thumb" onclick="openGallery(1)">
+                                    <img src="assets/images/projects/projet2/Screenshot 2026-06-08 010030.png"
+                                        alt="Projet 2" class="project-full-img" />
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-images"></i>
+                                        <span>Voir les captures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="project-full-body">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="project-badge">Java EE</span>
+                                        <span class="project-num">#02</span>
+                                    </div>
+                                    <h3 class="project-title">Sama Xaliss</h3>
+                                    <p class="project-desc">Application de Gestion des Dépenses Personnelles – Java EE
+                                        Développement d’une application web en Java EE permettant la gestion sécurisée
+                                        des dépenses personnelles :
+                                        authentification, gestion des catégories et transactions, filtrage des données
+                                        et tableau de bord statistique.</p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <span class="tech-tag">Java EE</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Bootstrap</span>
+                                        <span class="tech-tag">JDBC</span>
+                                        <span class="tech-tag">MySQL/JPA-Hibernate</span>
+                                    </div>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <a href="https://github.com/Bouya-SECK/gestion_depense_jee" target="_blank"
+                                            class="btn btn-outline-custom btn-sm">
+                                            <i class="bi bi-github me-2"></i>GitHub
+                                        </a>
+                                        <button class="btn btn-orange btn-sm"
+                                            onclick="openVideo('assets/videos/projet2.mp4')">
+                                            <i class="bi bi-play-circle me-2"></i>Live demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJET 3 ── -->
+                <div class="col-12">
+                    <div class="project-full-card reveal">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-5">
+                                <div class="project-gallery-thumb" onclick="openGallery(2)">
+                                    <img src="assets/images/projects/projet3/Capture d’écran 2026-09-22 155007.png"
+                                        alt="Système de Gestion Clinique Médicale" class="project-full-img" />
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-images"></i>
+                                        <span>Voir les captures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="project-full-body">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="project-badge"
+                                            style="background:rgba(168,85,247,.2);color:#a855f7;border-color:rgba(168,85,247,.4)">Projet
+                                            phare</span>
+                                        <span class="project-num">#03</span>
+                                    </div>
+                                    <h3 class="project-title">Système de Gestion Clinique Médicale</h3>
+                                    <p class="project-desc">Application desktop architecturée en couches (MVC/SOLID)
+                                        couvrant les consultations, la facturation et les RDV avec contrôle
+                                        d'interchevauchement. Intègre l'authentification BCrypt, le contrôle d'accès
+                                        RBAC et l'export PDF dynamique via iText.</p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <span class="tech-tag">Java 21</span>
+                                        <span class="tech-tag">JavaFX</span>
+                                        <span class="tech-tag">Hibernate / JPA</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">iText 5</span>
+                                    </div>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <a href="https://github.com/Bouya-SECK/Examen_Java_Gestion_Clinique_L3GL.git"
+                                            target="_blank" class="btn btn-outline-custom btn-sm">
+                                            <i class="bi bi-github me-2"></i>GitHub
+                                        </a>
+                                        <button class="btn btn-orange btn-sm"
+                                            onclick="openVideo('assets/videos/projet3.mp4')">
+                                            <i class="bi bi-play-circle me-2"></i>Live demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJET 4 ── -->
+                <div class="col-12">
+                    <div class="project-full-card reveal">
+                        <div class="row g-0 align-items-center flex-lg-row-reverse">
+                            <div class="col-lg-5">
+                                <div class="project-gallery-thumb" onclick="openGallery(3)">
+                                    <img src="assets/images/projects/projet4/Capture d’écran 1.png"
+                                        alt="Plateforme SunuXam" class="project-full-img" />
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-images"></i>
+                                        <span>Voir les captures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="project-full-body">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="project-badge"
+                                            style="background:rgba(59,130,246,.2);color:#3b82f6;border-color:rgba(59,130,246,.4)">API
+                                            REST</span>
+                                        <span class="project-num">#04</span>
+                                    </div>
+                                    <h3 class="project-title">SunuXam - Plateforme de Gestion de Concours</h3>
+                                    <p class="project-desc">Application web full-stack de digitalisation des concours de
+                                        recrutement. Elle permet l'inscription des candidats, le suivi des dossiers, la
+                                        gestion des épreuves, la saisie des notes et la délibération/publication
+                                        automatique des résultats avec authentification JWT.</p>
+                                    <div class="d-flex flex-wrap gap-2 mb-4">
+                                        <span class="tech-tag">Spring Boot 3</span>
+                                        <span class="tech-tag">Angular</span>
+                                        <span class="tech-tag">Spring Security (JWT)</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">Swagger</span>
+                                    </div>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <a href="https://github.com/Bouya-SECK/sunuxam.git" target="_blank"
+                                            class="btn btn-outline-custom btn-sm">
+                                            <i class="bi bi-github me-2"></i>GitHub
+                                        </a>
+                                        <button class="btn btn-orange btn-sm"
+                                            onclick="openVideo('assets/videos/projet4.mp4')">
+                                            <i class="bi bi-play-circle me-2"></i>Live demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       MODAL GALERIE — captures d'écran
+  ═══════════════════════════════════════════ -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content modal-dark">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title text-white" id="galleryTitle">Captures d'écran</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <!-- Image principale -->
+                    <div class="gallery-main-img-wrapper mb-3">
+                        <button class="gallery-arrow gallery-prev" onclick="prevSlide()"><i
+                                class="bi bi-chevron-left"></i></button>
+                        <img id="galleryMainImg" src="" alt="Capture" class="gallery-main-img" />
+                        <button class="gallery-arrow gallery-next" onclick="nextSlide()"><i
+                                class="bi bi-chevron-right"></i></button>
+                    </div>
+                    <!-- Compteur -->
+                    <p class="text-center text-muted-custom mb-3" id="slideCounter">1 / 4</p>
+                    <!-- Miniatures -->
+                    <div class="d-flex justify-content-center gap-2 flex-wrap" id="galleryThumbs"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+       MODAL VIDÉO — démonstration
+  ═══════════════════════════════════════════ -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content modal-dark">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title text-white">Démonstration</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-3">
+                    <video id="demoVideo" controls class="w-100 rounded-3" style="max-height:70vh;background:#000">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="footer-name mb-1">Bouya SECK</p>
+            <p class="footer-stack mb-3">Un developpeur passionné</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="https://github.com/votre-username" target="_blank" class="footer-icon"><i
+                        class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/votre-profil" target="_blank" class="footer-icon"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="mailto:votre.email@gmail.com" class="footer-icon"><i class="bi bi-envelope"></i></a>
+            </div>
+            <!-- <p class="footer-copy">© 2025 — Tous droits réservés</p> -->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+
+</html>

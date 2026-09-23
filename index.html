@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Développeur Web Junior</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-dark.css" />
+
+    <style>
+        /* Définition de l'animation */
+        @keyframes floatingImage {
+            0% {
+                transform: translate(0, 0px);
+            }
+
+            50% {
+                transform: translate(0, -15px);
+                /* Déplacement vers le haut */
+            }
+
+            100% {
+                transform: translate(0, 0px);
+                /* Retour au point de départ */
+            }
+        }
+
+        /* Classe CSS à appliquer à l'image */
+        .animated-hero-image {
+            animation: floatingImage 4s ease-in-out infinite;
+            /* Animation douce, répétée à l'infini */
+            animation-delay: 1.2s;
+            /* Petit délai pour qu'elle commence après l'apparition du texte */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-accent">BouyaSECK</span>.portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list" style="color:#ff6b00;font-size:1.5rem"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2 align-items-center">
+                    <li class="nav-item"><a class="nav-link nav-custom active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link nav-custom" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-orange-outline btn-sm px-3" href="contact.html">Me
+                            contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <p class="hero-badge fade-up delay-1"><span class="badge-dot"></span> Disponible pour de nouvelles
+                        opportunités</p>
+                    <h1 class="hero-title fade-up delay-2">Bonjour, je suis<br /><span class="gradient-text">Bouya
+                            SECK</span><span class="cursor-blink"></span></h1>
+                    <p class="hero-subtitle fade-up delay-3">Développeur <strong class="text-orange">Full-Stack
+                        </strong>, toujours en quête de nouvelles connaissances et de défis
+                        techniques.<br />J'aime concevoir des solutions efficaces, apprendre de
+                        nouvelles technologies et contribuer à
+                        des projets innovants avec sérieux et esprit d'équipe.</p>
+                    <div class="d-flex flex-wrap gap-3 fade-up delay-4">
+                        <a href="projects.html" class="btn btn-orange">Voir mes projets <i
+                                class="bi bi-arrow-right ms-1"></i></a>
+                        <a href="contact.html" class="btn btn-outline-custom">Me contacter</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center fade-up delay-5 mt-4 mt-lg-0">
+                    <img src="assets/images/myprofil1.png" alt="Bouya SECK"
+                        class="img-fluid rounded shadow animated-hero-image"
+                        style="width: 100%; max-width: 500px; height: auto; object-fit: cover;">
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4 border-top border-custom">
+                <div class="col-auto me-5">
+                    <p class="stat-number">10+</p>
+                    <p class="stat-label">Projets réalisés</p>
+                </div>
+                <div class="col-auto me-5">
+                    <p class="stat-number">1 an</p>
+                    <p class="stat-label">D'expérience</p>
+                </div>
+                <div class="col-auto">
+                    <p class="stat-number">100%</p>
+                    <p class="stat-label">Motivation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header mb-5">
+                <div class="section-line"></div>
+                <p class="section-tag">À propos</p>
+                <h2 class="section-title">Qui suis-je ?</h2>
+            </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-4">
+                    <div class="about-photo-wrapper">
+                        <div class="about-photo-border">
+                            <img src="assets/images/Gemini_Generated_Image_b3mdr7b3mdr7b3md.jpeg" alt="Photo de profil"
+                                class="about-photo" />
+                        </div>
+                        <div class="about-deco-1"></div>
+                        <div class="about-deco-2"></div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h3 class="about-name mb-3">Développeur basé à <span class="gradient-text">Dakar, Sénégal
+                            🇸🇳</span></h3>
+                    <p class="text-muted-custom mb-3">
+                        Jeune <strong class="text-orange">développeur Full-Stack</strong> diplômé d’une
+                        <strong class="text-orange">Licence en Génie Logiciel</strong>, passionné par le développement
+                        web, mobile
+                        et les nouvelles technologies. J’aime concevoir et développer des applications concrètes,
+                        performantes et adaptées aux besoins des utilisateurs.
+                        Au cours de ma formation et de mes différents projets, j’ai développé des compétences en
+                        TypeScript, Java, Spring Boot, Angular, Laravel, C#, Oracle et MySQL, ainsi qu’en conception
+                        et gestion de bases de données.
+                        <strong class="text-orange">Curieux, rigoureux et autodidacte</strong>, je cherche constamment
+                        à approfondir mes compétences et à relever de nouveaux défis techniques.
+                        Mon objectif est d’intégrer une équipe dynamique au sein de laquelle je pourrai mettre mes
+                        connaissances en pratique, continuer à progresser et contribuer efficacement à la réalisation
+                        de projets innovants.
+                    </p>
+
+
+                    <div class="d-flex flex-column gap-2 mb-4">
+                        <div class="info-item"><i class="bi bi-geo-alt text-orange"></i><span>Dakar, Sénégal</span>
+                        </div>
+                        <div class="info-item"><i
+                                class="bi bi-envelope text-orange"></i><span>bouyaseck02@gmail.com</span></div>
+                        <div class="info-item"><i class="bi bi-phone text-orange"></i><span>+221 77 682 61 33</span>
+                        </div>
+                        <div class="info-item"><span class="status-dot"></span><span class="text-orange">Disponible pour
+                                freelance / CDI</span></div>
+                    </div>
+                    <a href="assets/docs/CV_Bouya_Seck_Fr_2026.pdf" download class="btn btn-outline-custom"><i
+                            class="bi bi-download me-2"></i>Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-section">
+        <div class="container">
+            <div class="section-header mb-5">
+                <div class="section-line"></div>
+                <p class="section-tag">Compétences</p>
+                <h2 class="section-title">Mon stack technique</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="skill-card reveal">
+                        <div class="skill-icon skill-icon-blue"><i class="bi bi-display"></i></div>
+                        <h4 class="skill-card-title">Frontend</h4>
+                        <p class="skill-card-sub">Interfaces & styles</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span
+                                class="skill-tag">Tailwind CSS</span><span class="skill-tag">Bootstrap</span><span
+                                class="skill-tag">TypeScript</span><span class="skill-tag">Angular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="skill-card reveal">
+                        <div class="skill-icon skill-icon-orange"><i class="bi bi-server"></i></div>
+                        <h4 class="skill-card-title">Backend</h4>
+                        <p class="skill-card-sub">Logique serveur & API</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="skill-tag">PHP</span><span class="skill-tag">Laravel</span><span
+                                class="skill-tag">Java & Java EE</span><span class="skill-tag">Spring Boot</span><span
+                                class="skill-tag">C#</span><span class="skill-tag">REST API</span><span
+                                class="skill-tag">MySQL</span><span class="skill-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="skill-card reveal">
+                        <div class="skill-icon skill-icon-purple"><i class="bi bi-tools"></i></div>
+                        <h4 class="skill-card-title">Outils</h4>
+                        <p class="skill-card-sub">Workflow & environnement</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="skill-tag">Git & GitHub</span><span class="skill-tag">Postman</span><span
+                                class="skill-tag">Figma</span><span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-preview" class="section-padding">
+        <div class="container">
+            <div class="section-header mb-5 d-flex justify-content-between align-items-end flex-wrap gap-3">
+                <div>
+                    <div class="section-line"></div>
+                    <p class="section-tag">Projets</p>
+                    <h2 class="section-title mb-0">Ce que j'ai construit</h2>
+                </div>
+                <a href="projects.html" class="btn btn-outline-custom">Tous les projets <i
+                        class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="project-card reveal">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/projects/projet1/isiburger.png" alt="Projet 1"
+                                class="project-img" />
+                            <span class="project-badge">Laravel</span>
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">NOMABurger</h5>
+                            <p class="project-desc">Une application web professionnelle, responsive,
+                                couvrant l'intégralité du cycle de vie d'une commande restaurant — de la consultation du
+                                catalogue jusqu'à
+                                la facture PDF — avec une architecture propre, maintenable et prête pour la production.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-tag">Laravel</span><span class="tech-tag">TailwindCSS</span><span
+                                    class="tech-tag">JavaScript</span><span class="tech-tag">Alpine.js</span><span
+                                    class="tech-tag">PostgreSQL</span><span class="tech-tag"> Docker</span>
+                            </div>
+                            <a href="projects.html" class="btn btn-orange btn-sm">Voir le détail <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card reveal">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/projects/projet2/Screenshot 2026-06-08 010030.png" alt="Projet 2"
+                                class="project-img" />
+                            <span class="project-badge">Java EE</span>
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">Sama Xaliss</h5>
+                            <p class="project-desc">Application de Gestion des Dépenses Personnelles
+                                Sama Xaliss est une application web de gestion des dépenses personnelles développée en
+                                Java EE.
+                                Elle permet aux utilisateurs de suivre leurs dépenses, de créer des catégories
+                                personnalisées,
+                                d'analyser leurs habitudes de consommation et de planifier leur budget mensuel.
+                                L'application offre une interface intuitive pour une gestion financière efficace et
+                                simplifiée.
+
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-tag">Java EE</span><span class="tech-tag">JavaScript</span><span
+                                    class="tech-tag">Bootstrap</span><span class="tech-tag">MySQL/JPA-Hibernate</span>
+                            </div>
+                            <a href="projects.html" class="btn btn-orange btn-sm">Voir le détail <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="footer-name mb-1">Bouya SECK</p>
+            <p class="footer-stack mb-3">Un developpeur passionné</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="https://github.com/votre-username" target="_blank" class="footer-icon"><i
+                        class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/votre-profil" target="_blank" class="footer-icon"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="mailto:votre.email@gmail.com" class="footer-icon"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
