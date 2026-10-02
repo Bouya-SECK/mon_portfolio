@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-dark.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+<script>document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';</script>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><span class="brand-accent">BouyaSECK</span>.portfolio</a>
+            <a class="navbar-brand" href="index.html"><span class="brand-icon">&lt;/&gt;</span>Bouya SECK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-list" style="color:#ff6b00;font-size:1.5rem"></i>
             </button>
@@ -307,7 +309,7 @@
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container text-center">
-            <p class="footer-name mb-1">Bouya SECK</p>
+            <span>Fait avec <i class="bi bi-heart-fill text-danger"></i> par Bouya SECK</span>
             <p class="footer-stack mb-3">Un developpeur passionné</p>
             <div class="d-flex justify-content-center gap-3 mb-4">
                 <a href="https://github.com/votre-username" target="_blank" class="footer-icon"><i

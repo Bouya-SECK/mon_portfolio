@@ -1,23 +1,19 @@
 /* =============================================
    projects.js — Galerie captures + Modal vidéo
+   (main.js doit être chargé avant : il fournit window.t)
    ============================================= */
+
+// Traduit un texte français selon la langue courante (sans effet si main.js est absent)
+const tr = text => (window.t ? window.t(text) : text);
 
 /* ══════════════════════════════════════════════
    DONNÉES : configure ici les images de chaque projet
-   ══════════════════════════════════════════════
-
-   Pour chaque projet, ajoute les chemins vers
-   tes captures d'écran dans le tableau "screenshots".
-   Exemple :
-     screenshots: [
-       'assets/images/projects/p1/step1.png',
-       'assets/images/projects/p1/step2.png',
-       'assets/images/projects/p1/step3.png',
-     ]
-   ============================================= */
+   - name : nom français (traduit via le dictionnaire de main.js si besoin)
+   - screenshots : chemins des captures d'écran
+   ══════════════════════════════════════════════ */
 const projectsData = [
     {
-        name: 'Nom du Projet 1',
+        name: 'NOMABurger',
         screenshots: [
             'assets/images/projects/projet1/isiburger.png',
             'assets/images/projects/projet1/img11.png',
@@ -33,7 +29,7 @@ const projectsData = [
         ]
     },
     {
-        name: 'Nom du Projet 2',
+        name: 'Sama Xaliss',
         screenshots: [
             'assets/images/projects/projet2/Screenshot 2026-06-08 010030.png',
             'assets/images/projects/projet2/Screenshot 2026-06-08 010019.png',
@@ -44,7 +40,7 @@ const projectsData = [
         ]
     },
     {
-        name: 'Nom du Projet 3',
+        name: 'Système de Gestion Clinique Médicale',
         screenshots: [
             'assets/images/projects/projet3/Capture d’écran 2026-09-22 155007.png',
             'assets/images/projects/projet3/Capture d’écran 2026-09-22 155117.png',
@@ -57,7 +53,7 @@ const projectsData = [
         ]
     },
     {
-        name: 'Nom du Projet 4',
+        name: 'SunuXam - Plateforme de Gestion de Concours',
         screenshots: [
             'assets/images/projects/projet4/Capture d’écran 1.png',
             'assets/images/projects/projet4/Capture d’écran 2.png',
@@ -78,8 +74,9 @@ function openGallery(projectIndex) {
     currentSlide = 0;
     const project = projectsData[projectIndex];
 
-    // Titre
-    document.getElementById('galleryTitle').textContent = project.name + ' — Captures d\'écran';
+    // Titre (traduit selon la langue active)
+    document.getElementById('galleryTitle').textContent =
+        `${tr(project.name)} — ${tr("Captures d'écran")}`;
 
     // Construire les miniatures
     const thumbsContainer = document.getElementById('galleryThumbs');
@@ -87,7 +84,7 @@ function openGallery(projectIndex) {
     project.screenshots.forEach((src, i) => {
         const img = document.createElement('img');
         img.src = src;
-        img.alt = `Étape ${i + 1}`;
+        img.alt = `${tr('Étape')} ${i + 1}`;
         img.className = 'gallery-thumb-item' + (i === 0 ? ' active' : '');
         img.onclick = () => goToSlide(i);
         thumbsContainer.appendChild(img);
@@ -114,7 +111,7 @@ function renderSlide() {
     counterEl.textContent = `${currentSlide + 1} / ${total}`;
 
     // Mettre à jour la miniature active
-    thumbs.forEach((t, i) => t.classList.toggle('active', i === currentSlide));
+    thumbs.forEach((thumb, i) => thumb.classList.toggle('active', i === currentSlide));
 }
 
 function nextSlide() {
